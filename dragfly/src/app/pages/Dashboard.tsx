@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { WalletConnector } from './WalletConnector'; // Assuming you have a wallet connector component
 
-const dashboard = ({ children }) => {
+const Dashboard = ({ children }) => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
   return (
