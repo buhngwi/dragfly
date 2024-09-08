@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: url(/dragfly/src/app/assets/images/genai_28.jpeg);
   --foreground: #171717;
 }
 
