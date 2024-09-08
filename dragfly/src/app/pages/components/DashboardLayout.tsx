@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { WalletConnector } from './WalletConnector'; // Assuming you have a wallet connector component
 
-const Dashboard = ({ children }) => {
+const DashboardLayout = ({ children }) => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -10,7 +10,7 @@ const Dashboard = ({ children }) => {
       {/* Sidebar */}
       <aside className={`w-64 ${isSidebarOpen ? 'block' : 'hidden'} md:block bg-blue-900`}>
         <div className="p-4 text-white">
-          <h2 className="text-2xl font-bold mb-6">DragFly Dashboard</h2>
+          <h2 className="text-2xl font-bold mb-6">DeFi Dashboard</h2>
           <ul>
             <li className="mb-4">
               <a href="/dashboard" className="block py-2 px-4 text-white hover:bg-blue-700">Portfolio</a>
@@ -52,4 +52,4 @@ const Dashboard = ({ children }) => {
   );
 };
 
-export default dashboard;
+export default DashboardLayout;
